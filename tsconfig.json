@@ -1,16 +1,30 @@
 {
-	"extends": "@sindresorhus/tsconfig",
 	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"jsx": "react",
+		"sourceMap": true,
+		"declaration": true,
+		"pretty": true,
+		"newLine": "lf",
+		"stripInternal": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noEmitOnError": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
 		"outDir": "dist",
 		"target": "es2016",
+		"strict": false,
+		"esModuleInterop": true,
 		"lib": [
 			"es2016"
 		],
-
-		// TODO: Remove this
-		"strict": false
 	},
 	"include": [
-		"source"
+		"source", "example"
 	]
 }
